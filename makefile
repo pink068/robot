@@ -1,8 +1,8 @@
 CC=g++
 CFLAGS=-c -Wall -ggdb
-LDFLAGS= -lrt -ldl -lm -lflxmlrpc -lncurses  -O2 -Wall
-SOURCES= main.cpp datarobot.cpp dev.cpp myxmlrpc.cpp
-OBJECTS=$(SOURCES:.cpp=.o) sqlite3.obj
+LDFLAGS= -lrt -ldl -lm -lncurses -lsqlite3 -O2 -Wall
+SOURCES= main.cpp library.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=run
 
 
